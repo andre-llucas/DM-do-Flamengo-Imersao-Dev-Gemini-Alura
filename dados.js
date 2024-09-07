@@ -1,12 +1,13 @@
 let dados = [
     {
         nome: "Pedro",
-        posicao: "Centroavante",
+        posicao: "Atacante",
         descricao: "Centroavante brasileiro conhecido por sua habilidade de finalização.",
         instagram: "https://www.instagram.com/pedroguilherme/",
         lesao: "Ruptura do ligamento cruzado anterior do joelho esquerdo.",
         tempoEstimadoRecuperacao: "6 meses",
-        dataInicioLesao: "2024-09-04"
+        dataInicioLesao: "2024-09-04",
+        tag:"9 queixo reverência"
     },
     {
         nome: "Matías Viña",
@@ -15,7 +16,8 @@ let dados = [
         instagram: "https://www.instagram.com/matiasvina/",
         lesao: "Lesão no menisco do joelho direito.",
         tempoEstimadoRecuperacao: "4 meses",
-        dataInicioLesao: "2024-08-11"
+        dataInicioLesao: "2024-08-11",
+        tag: "uruguaio seleção uruguaia",
     },
     {
         nome: "Everton Cebolinha",
@@ -24,7 +26,8 @@ let dados = [
         instagram: "https://www.instagram.com/cebolinhaoficial/",
         lesao: "Ruptura do tendão de Aquiles.",
         tempoEstimadoRecuperacao: "8 meses",
-        dataInicioLesao: "2024-08-11"
+        dataInicioLesao: "2024-08-11",
+        tag: "atacante brasileiro velocidade drible"
     },
     {
         nome: "Gabigol",
@@ -32,8 +35,9 @@ let dados = [
         descricao: "Ídolo da torcida, artilheiro e referência técnica do time.",
         instagram: "https://www.instagram.com/gabigol/",
         lesao: "Lesão muscular",
-          tempoEstimadoRecuperacao: "4 semanas",
-          dataInicioLesao: "2024-08-15"
+        tempoEstimadoRecuperacao: "4 semanas",
+        dataInicioLesao: "2024-08-15",
+        tag: "hoje tem artilheiro",
      },
     {
         nome: "Giorgian de Arrascaeta",
@@ -42,7 +46,8 @@ let dados = [
         instagram: "https://www.instagram.com/g10dearrascaeta/",
         lesao: "Lesão muscular",
         tempoEstimadoRecuperacao: "3 semanas",
-        dataInicioLesao: "2024-08-20"
+        dataInicioLesao: "2024-08-20",
+        tag: "uruguaio habilidade passes"
     },
     {
         nome: "Erick Pulgar",
@@ -51,7 +56,8 @@ let dados = [
         instagram: "https://www.instagram.com/erickpulgar/",
         lesao: "Distensão muscular na coxa direita",
         tempoEstimadoRecuperacao: "3 semanas",
-        dataInicioLesao: "2024-09-04"
+        dataInicioLesao: "2024-09-04",
+        tag: "volante chileno seleção chilena desarme"
     },
     {
         nome: "Guillermo Varela",
@@ -60,7 +66,8 @@ let dados = [
         instagram: "https://www.instagram.com/guillermovarela/",
         lesao: "Entorse no tornozelo esquerdo",
         tempoEstimadoRecuperacao: "2 semanas",
-        dataInicioLesao: "2024-09-04"
+        dataInicioLesao: "2024-09-04",
+        tag: "lateral seleção uruguaia",
     },
     {
         nome: "Nico De La Cruz",
@@ -69,7 +76,8 @@ let dados = [
         instagram: "https://www.instagram.com/nicodelaruz/",
         lesao: "Lesão muscular na coxa esquerda",
         tempoEstimadoRecuperacao: "1 mês",
-        dataInicioLesao: "2024-08-28"
+        dataInicioLesao: "2024-08-28",
+        tag: "meia uruguaio drible",
     },
     {
         nome: "Michael",
@@ -78,7 +86,8 @@ let dados = [
         instagram: "https://www.instagram.com/michaeloficial/",
         lesao: "Lesão muscular na coxa direita",
         tempoEstimadoRecuperacao: "3 semanas",
-        dataInicioLesao: "2024-08-28"
+        dataInicioLesao: "2024-08-28",
+        tag: "robozinho feio velocidade"
     },
     {
         nome: "Léo Pereira",
@@ -87,6 +96,7 @@ let dados = [
         instagram: "https://www.instagram.com/leopereiraoficial/",
         lesao: "Entorse no joelho esquerdo",
         tempoEstimadoRecuperacao: "2 semanas",
-        dataInicioLesao: "2024-08-31"
+        dataInicioLesao: "2024-08-31",
+        tag: "zagueiro karolino carolino"
     },
 ];
