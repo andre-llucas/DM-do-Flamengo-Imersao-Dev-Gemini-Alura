@@ -8,18 +8,30 @@ function pesquisar() {
   // Seleciona o elemento HTML com o ID "resultados-pesquisa" e armazena em uma variável.
   // Este elemento será preenchido com os resultados da pesquisa.
   let section = document.getElementById("resultados-pesquisa");
-  console.log(section); // Linha usada para depuração, mostra o elemento no console do navegador.
+
+  let campoPesquisa = document.getElementById("campo-pesquisa").value;
+
+  // Se campoPesquisa estiver vazio, não retornar nada
+  if(campoPesquisa == "") {
+    section.innerHTML = "Nada foi encontrado. Digite o nome ou posição do jogador."
+    return
+  }
+
+  campoPesquisa = campoPesquisa.toLowerCase()
 
   // Inicializa uma string vazia para armazenar os resultados da pesquisa.
   // Conforme o loop, cada item será adicionado a esta string.
   let resultados = "";
+  let nome = "";
+  let descricao = "";
+  let tag = "";
 
   // Itera sobre cada "dado" dentro da lista de dados (assumindo que 'dados' seja um array de objetos).
   // Para cada dado, cria um novo elemento HTML e adiciona-o à string 'resultados'.
   for (let dado of dados) {
-    // Cria uma nova div para representar um item de resultado.
-    // Utiliza template literals (``) para construir a string HTML de forma mais legível.
-    // Cada propriedade do objeto 'dado' é inserida em seu respectivo elemento HTML.
+      nome = dado.nome.toLowerCase();
+      posicao = dado.posicao.toLowerCase();
+      tag = dado.tag.toLowerCase();
 
     // Data da lesão
     let dataInicio = new Date(dado.dataInicioLesao);
@@ -43,6 +55,9 @@ function pesquisar() {
     let options = { year: 'numeric', month: 'long', day: 'numeric' };
     let dataFormatada = dataRecuperacao.toLocaleDateString('pt-BR', options);
 
+    // Se o que foi pesquisado existir nos dados, ele mostra somente o que foi pesquisado
+    if(nome.includes(campoPesquisa) || posicao.includes(campoPesquisa) || tag.includes(campoPesquisa)) {
+
     resultados += `<div class="item-resultado">
       <h2>
         <a href="#" target="_blank">${dado.nome}</a>
@@ -55,6 +70,11 @@ function pesquisar() {
       <a href=${dado.instagram} target="_blank">Confira a recuperação do jogador no Instagram</a>
     </div>`;
   }
+  }
+
+if(!resultados){
+    resultados = "<p>Este atleta não foi encontrado. Tomara que ele não se machuque.</p>"
+}
 
   // Atribui a string completa de resultados ao conteúdo HTML do elemento 'section'.
   // Isso substitui o conteúdo anterior do elemento com os novos resultados.
