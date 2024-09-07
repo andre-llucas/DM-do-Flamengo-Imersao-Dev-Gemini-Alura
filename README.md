@@ -1,4 +1,4 @@
-# Ferramenta de Pesquisa de Jogadores Lesionados: Seu Time B está Aqui!
+# Ferramenta de Pesquisa de Jogadores Lesionados: Seu Time B está Aqui! - Imersão Dev com Google Gemini!
 
 **O que faz essa aplicação?**
 
